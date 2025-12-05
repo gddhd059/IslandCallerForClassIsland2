@@ -1,0 +1,2 @@
+# IslandCallerForClassIsland2
+由IslandCaller修改而来，基于ClassIsland2插件的轻量级点名器
