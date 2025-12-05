@@ -1,14 +1,9 @@
 <div align="center">
 
 
-# IslandCaller
+# IslandCallerForClassIsland2
 
-IslandCaller 是一个基于 ClassIsland 提醒服务的轻量级点名器，用于在课堂上快速点名。<\br>
-[![Stars](https://img.shields.io/github/stars/HUSX100/IslandCaller?label=Stars)](https://github.com/HUSX100/IslandCaller)
-[![正式版 Release](https://img.shields.io/github/v/release/HUSX100/IslandCaller?style=flat-square&color=%233fb950&label=正式版)](https://github.com/HUSX100/IslandCaller/releases/latest)
-[![下载量](https://img.shields.io/github/downloads/HUSX100/IslandCaller/total?style=social&label=下载量&logo=github)](https://github.com/HUSX100/IslandCaller/releases/latest)
-[![GitHub Repo Languages](https://img.shields.io/github/languages/top/HUSX100/IslandCaller?style=flat-square)](https://github.com/HUSX100/IslandCaller/search?l=c%23)
-</div>
+IslandCallerForClassIsland2 是一个基于 ClassIsland 提醒服务的轻量级点名器，用于在课堂上快速点名。
 
 ## 特性
 
@@ -38,14 +33,12 @@ IslandCaller 是一个基于 ClassIsland 提醒服务的轻量级点名器，用
 - [x] 悬浮窗
 - [x] 高级悬浮窗
 
-### 联动功能
 
-- [x] 与[智绘教Inkeys](https://github.com/Alan-CRL/Inkeys)联动(需升级至正式版20250503a及以上)
 
 
 ## 使用方法
 
-1. **下载插件：** 从 ClassIsland 插件商店下载 `IslandCaller` 插件。
+1. **下载插件：** 从 ClassIsland2 插件商店下载 `IslandCallerForClassIsland2` 插件。
 
 2. **创建快捷方式：**
    在插件设置中创建桌面快捷方式，或者自行创建一个指向 `classisland://plugins/IslandCaller/Run` 的快捷方式。
@@ -68,6 +61,7 @@ IslandCaller 是一个基于 ClassIsland 提醒服务的轻量级点名器，用
 - [ClassIsland.PluginSdk](https://github.com/ClassIsland/ClassIsland/)
 - [UI.WPF.Modern](https://github.com/iNKORE-NET/UI.WPF.Modern)
 - [QRCoder](https://github.com/codebude/QRCoder)
+- [IslandCaller](https://github.com/HUSX100/IslandCaller)
 
 ## 许可
 
@@ -75,8 +69,8 @@ IslandCaller 是一个基于 ClassIsland 提醒服务的轻量级点名器，用
 
 ---
 
-如果你在使用过程中遇到任何问题，欢迎提交 [Issue](https://github.com/HUSX100/IslandCaller/issues)。
+如果你在使用过程中遇到任何问题，欢迎提交 [Issue]([https://github.com/gddhd059/IslandCallerForClassIsland2/issues)。
 
 ---
 
-感谢你使用 IslandCaller，希望它能为你的课堂管理带来便利！
+感谢你使用 IslandCallerForClassIsland2，希望它能为你的课堂管理带来便利！
