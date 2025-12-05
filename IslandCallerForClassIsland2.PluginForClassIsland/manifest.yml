@@ -1,0 +1,12 @@
+id: Plugin.IslandCaller.ClassIsland2
+name: IslandCallerForClassIsland2
+description: 一个基于Classisland插件的轻量级点名器
+entranceAssembly: "IslandCallerForClassIsland2.PluginForClassIsland.dll"
+url: https://github.com/gddhd059/IslandCallerForClassIsland2
+author: gddhd059
+version: 1.0.4.0
+apiVersion: 2.0.0.0
+icon: Icon.ico
+repoOwner: gddhd059
+repoName: IslandCallerForClassIsland2
+assetsRoot: master/IslandCallerForClassIsland2.PluginForClassIsland/

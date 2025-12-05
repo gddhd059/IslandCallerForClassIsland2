@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <EnableDynamicLoading>True</EnableDynamicLoading>
+        <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <Company></Company>
+        <Authors>gddhd059</Authors>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <BaseOutputPath>..\bin\IslandCallerForClassIsland2.PluginForClassIsland</BaseOutputPath>
+        <Platforms>AnyCPU</Platforms>
+        <AssemblyName>IslandCallerForClassIsland2.PluginForClassIsland</AssemblyName>
+        <RootNamespace>IslandCallerForClassIsland2</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Resource\Icon.ico" />
+      <None Remove="Resource\Icon.png" />
+      <None Remove="Resource\Main.png" />
+      <None Remove="Resource\Secondary.png" />
+      <None Remove="Resource\Shower.png" />
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+      <Resource Include="Resource\Icon.ico">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Icon.png">
+        <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      </Resource>
+      <Resource Include="Resource\Shower.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resource\Main.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="ClassIsland.PluginSdk" Version="1.7.106.2-dev-v2">
+            <ExcludeAssets>runtime</ExcludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="iNKORE.UI.WPF.Modern" Version="0.10.1" />
+        <PackageReference Include="QRCoder" Version="1.6.0" />
+        <PackageReference Include="WPF-UI" Version="4.0.3" />
+        <PackageReference Include="MaterialDesignThemes" Version="4.6.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Icon.ico">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="Icon.png">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="manifest.yml">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Update="README.md">
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+    <Target Name="CopyCoreDll" AfterTargets="Build">
+        <!-- 复制Core.dll到插件输出目录 -->
+        <Copy SourceFiles="$(SolutionDir)Core\Win32\Debug\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Debug'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)Core\x64\Debug\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Debug'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)bin\Core\Debug\Win32\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Debug'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)bin\Core\Debug\x64\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Debug'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)Core\Win32\Release\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Release'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)Core\x64\Release\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Release'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)bin\Core\Release\Win32\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Release'" ContinueOnError="true" />
+        <Copy SourceFiles="$(SolutionDir)bin\Core\Release\x64\Core.dll" DestinationFolder="$(OutputPath)" Condition="'$(Configuration)' == 'Release'" ContinueOnError="true" />
+    </Target>
+
+    <ItemGroup>
+      <Resource Include="Resource\Secondary.png" />
+    </ItemGroup>
+
+</Project>
